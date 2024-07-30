@@ -1,0 +1,66 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.883883",
+   "Default View_TopLeft":"-414,-603",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 4 -x 1610 -y -130 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1610 -y -60 -defaultsOSRD
+preplace port port-id_VP -pg 1 -lvl 0 -x -10 -y -400 -defaultsOSRD
+preplace port port-id_VN -pg 1 -lvl 0 -x -10 -y -420 -defaultsOSRD
+preplace port port-id_Digital_1 -pg 1 -lvl 4 -x 1610 -y 160 -defaultsOSRD
+preplace port port-id_Digital_2 -pg 1 -lvl 4 -x 1610 -y 180 -defaultsOSRD
+preplace port port-id_Digital_3 -pg 1 -lvl 4 -x 1610 -y 200 -defaultsOSRD
+preplace port port-id_Digital_4 -pg 1 -lvl 4 -x 1610 -y 220 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x -10 -y 210 -defaultsOSRD
+preplace port port-id_test_signal -pg 1 -lvl 4 -x 1610 -y 240 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -10 -y 340 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 600 -y -110 -defaultsOSRD
+preplace inst xadc_wiz_0 -pg 1 -lvl 1 -x 220 -y -440 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 220 -y 270 -defaultsOSRD
+preplace inst XADC_interpreter_2_0 -pg 1 -lvl 2 -x 600 -y -400 -defaultsOSRD
+preplace inst Top_level_0 -pg 1 -lvl 2 -x 600 -y 200 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 1070 -y -410 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -x 1070 -y -650 -defaultsOSRD
+preplace inst rst_clk_wiz_0_40M -pg 1 -lvl 2 -x 600 -y -650 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 3 -x 1070 -y 190 -defaultsOSRD
+preplace netloc VN_1 1 0 1 20 -420n
+preplace netloc VP_1 1 0 1 10 -400n
+preplace netloc XADC_interpreter_2_0_daddr_in 1 0 3 20 -800 NJ -800 810
+preplace netloc XADC_interpreter_2_0_den_in 1 0 3 30 -790 NJ -790 840
+preplace netloc XADC_interpreter_2_0_di_in 1 0 3 40 -780 NJ -780 830
+preplace netloc XADC_interpreter_2_0_dwe_in 1 0 3 60 -770 NJ -770 820
+preplace netloc clk_1 1 0 1 10 270n
+preplace netloc clk_wiz_0_clk_40MHz 1 0 3 50 -620 360 -760 870
+preplace netloc reset_1 1 0 2 70J 190 390J
+preplace netloc xadc_wiz_0_do_out 1 0 2 70 -610 380J
+preplace netloc xadc_wiz_0_drdy_out 1 0 2 80 -600 370J
+preplace netloc clk_wiz_0_clk_42MHz 1 1 1 380 170n
+preplace netloc clk_wiz_0_clk_84MHz 1 1 1 400 190n
+preplace netloc Top_level_0_LED_1 1 2 2 810 90 1260
+preplace netloc Top_level_0_LED_2 1 2 2 900 100 1240
+preplace netloc Top_level_0_LED_3 1 2 2 820 110 1230
+preplace netloc Top_level_0_LED_4 1 2 2 880 80 1250
+preplace netloc Top_level_0_test_signal 1 2 2 900 280 1260
+preplace netloc XADC_interpreter_2_0_adc_data 1 2 2 900 -330 1250
+preplace netloc rst_clk_wiz_0_40M_peripheral_aresetn 1 2 1 910 -700n
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 2 400 -750 800
+preplace netloc Top_level_0_combined_threshold_output 1 2 2 800J 270 1220
+preplace netloc processing_system7_0_DDR 1 2 2 NJ -160 1260
+preplace netloc processing_system7_0_FIXED_IO 1 2 2 NJ -140 1250
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 880 -760n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 2 920 -820 1250
+preplace netloc processing_system7_0_M_AXI_GP1 1 2 1 890 -740n
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 2 920 -320 1260J
+levelinfo -pg 1 -10 220 600 1070 1610
+pagesize -pg 1 -db -bbox -sgen -310 -860 2800 1320
+"
+}
+{
+   "da_axi4_cnt":"16",
+   "da_axi4_s2mm_cnt":"11",
+   "da_board_cnt":"1",
+   "da_clkrst_cnt":"21",
+   "da_ps7_cnt":"1"
+}

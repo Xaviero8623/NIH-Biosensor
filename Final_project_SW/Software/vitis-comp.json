@@ -1,0 +1,15 @@
+{
+  "name": "Software",
+  "type": "HOST",
+  "platform": "C:\\Users\\onwuxc\\Desktop\\Work\\Final_project_SW\\Biosensor_FGPA\\export\\Biosensor_FGPA\\Biosensor_FGPA.xpfm",
+  "domain": "standalone_ps7_cortexa9_0",
+  "cpuInstance": "ps7_cortexa9_0",
+  "cpuType": "cortex-a9",
+  "os": "standalone",
+  "configuration": {
+    "componentType": "HOST",
+    "hostToolchainConfigurations": []
+  },
+  "domainRealName": "standalone_ps7_cortexa9_0",
+  "applicationFlow": "EMBEDDED"
+}

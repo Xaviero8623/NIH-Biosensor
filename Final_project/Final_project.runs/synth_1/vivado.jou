@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Jul 29 11:38:22 2024
+# Process ID: 30796
+# Current directory: C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.runs/synth_1
+# Command line: vivado.exe -log final_block_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source final_block_wrapper.tcl
+# Log file: C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.runs/synth_1/final_block_wrapper.vds
+# Journal file: C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.runs/synth_1\vivado.jou
+# Running On        :NIBIB02135175DT
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz
+# CPU Frequency     :3192 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :34145 MB
+# Swap memory       :5100 MB
+# Total Virtual     :39246 MB
+# Available Virtual :9360 MB
+#-----------------------------------------------------------
+source final_block_wrapper.tcl -notrace

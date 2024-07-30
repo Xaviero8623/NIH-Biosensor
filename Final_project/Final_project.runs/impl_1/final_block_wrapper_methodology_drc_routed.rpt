@@ -1,0 +1,195 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Jul 29 11:43:16 2024
+| Host         : NIBIB02135175DT running 64-bit major release  (build 9200)
+| Command      : report_methodology -file final_block_wrapper_methodology_drc_routed.rpt -pb final_block_wrapper_methodology_drc_routed.pb -rpx final_block_wrapper_methodology_drc_routed.rpx
+| Design       : final_block_wrapper
+| Device       : xc7z007sclg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 32
++-----------+----------+-----------------------+------------+
+| Rule      | Severity | Description           | Violations |
++-----------+----------+-----------------------+------------+
+| TIMING-16 | Warning  | Large setup violation | 32         |
++-----------+----------+-----------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.368 ns between final_block_i/Top_level_0/U0/cycle_3/current_sin_value_reg[4]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_3_reg[4]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.389 ns between final_block_i/Top_level_0/U0/cycle_3/current_sin_value_reg[5]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_3_reg[5]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.391 ns between final_block_i/Top_level_0/U0/cycle_4/current_sin_value_reg[7]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_4_reg[7]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -1.392 ns between final_block_i/Top_level_0/U0/cycle_1/current_sin_value_reg[7]_replica/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_1_reg[7]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -1.419 ns between final_block_i/Top_level_0/U0/cycle_1/current_sin_value_reg[5]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_1_reg[5]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -1.419 ns between final_block_i/Top_level_0/U0/cycle_4/current_sin_value_reg[5]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_4_reg[5]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -1.422 ns between final_block_i/Top_level_0/U0/cycle_4/current_sin_value_reg[3]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_4_reg[3]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -1.430 ns between final_block_i/Top_level_0/U0/cycle_3/current_sin_value_reg[1]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_3_reg[1]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -1.442 ns between final_block_i/Top_level_0/U0/cycle_1/current_sin_value_reg[1]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_1_reg[1]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -1.446 ns between final_block_i/Top_level_0/U0/cycle_1/current_sin_value_reg[4]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_1_reg[4]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -1.459 ns between final_block_i/Top_level_0/U0/cycle_2/current_sin_value_reg[3]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_2_reg[3]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -1.459 ns between final_block_i/Top_level_0/U0/cycle_2/current_sin_value_reg[4]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_2_reg[4]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -1.459 ns between final_block_i/Top_level_0/U0/cycle_2/current_sin_value_reg[5]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_2_reg[5]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -1.467 ns between final_block_i/Top_level_0/U0/cycle_1/current_sin_value_reg[3]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_1_reg[3]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -1.471 ns between final_block_i/Top_level_0/U0/cycle_4/current_sin_value_reg[2]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_4_reg[2]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -1.475 ns between final_block_i/Top_level_0/U0/cycle_2/current_sin_value_reg[1]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_2_reg[1]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -1.476 ns between final_block_i/Top_level_0/U0/cycle_2/current_sin_value_reg[0]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_2_reg[0]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -1.490 ns between final_block_i/Top_level_0/U0/cycle_2/current_sin_value_reg[2]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_2_reg[2]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -1.495 ns between final_block_i/Top_level_0/U0/cycle_4/current_sin_value_reg[0]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_4_reg[0]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -1.502 ns between final_block_i/Top_level_0/U0/cycle_4/current_sin_value_reg[4]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_4_reg[4]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -1.510 ns between final_block_i/Top_level_0/U0/cycle_4/current_sin_value_reg[1]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_4_reg[1]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -1.511 ns between final_block_i/Top_level_0/U0/cycle_2/current_sin_value_reg[7]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_2_reg[7]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -1.514 ns between final_block_i/Top_level_0/U0/cycle_1/current_sin_value_reg[6]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_1_reg[6]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -1.514 ns between final_block_i/Top_level_0/U0/cycle_3/current_sin_value_reg[3]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_3_reg[3]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -1.548 ns between final_block_i/Top_level_0/U0/cycle_3/current_sin_value_reg[7]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_3_reg[7]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -1.553 ns between final_block_i/Top_level_0/U0/cycle_1/current_sin_value_reg[2]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_1_reg[2]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -1.553 ns between final_block_i/Top_level_0/U0/cycle_4/current_sin_value_reg[6]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_4_reg[6]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -1.556 ns between final_block_i/Top_level_0/U0/cycle_1/current_sin_value_reg[0]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_1_reg[0]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -1.570 ns between final_block_i/Top_level_0/U0/cycle_2/current_sin_value_reg[6]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_2_reg[6]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -1.584 ns between final_block_i/Top_level_0/U0/cycle_3/current_sin_value_reg[6]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_3_reg[6]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -1.588 ns between final_block_i/Top_level_0/U0/cycle_3/current_sin_value_reg[0]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_3_reg[0]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -1.657 ns between final_block_i/Top_level_0/U0/cycle_3/current_sin_value_reg[2]/C (clocked by clk_42MHz_final_block_clk_wiz_0_0) and final_block_i/Top_level_0/U0/threshold_output_3_reg[2]/D (clocked by clk_40MHz_final_block_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+

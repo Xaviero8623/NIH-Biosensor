@@ -1,0 +1,3 @@
+C:/Users/onwuxc/Desktop/Work/Final_project_SW/Biosensor_FGPA/zynq_fsbl/build/CMakeFiles/fsbl.elf.dir
+C:/Users/onwuxc/Desktop/Work/Final_project_SW/Biosensor_FGPA/zynq_fsbl/build/CMakeFiles/edit_cache.dir
+C:/Users/onwuxc/Desktop/Work/Final_project_SW/Biosensor_FGPA/zynq_fsbl/build/CMakeFiles/rebuild_cache.dir

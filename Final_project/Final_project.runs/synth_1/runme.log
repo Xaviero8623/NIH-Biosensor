@@ -1,0 +1,1470 @@
+
+*** Running vivado
+    with args -log final_block_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source final_block_wrapper.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Mon Jul 29 11:38:22 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source final_block_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 657.340 ; gain = 235.082
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.srcs/sources_1/new'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/onwuxc/ip_repo/myaxi_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx2/Vivado/2024.1/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx2/Vivado/2024.1/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.srcs/utils_1/imports/synth_1/Top_level.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.srcs/utils_1/imports/synth_1/Top_level.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top final_block_wrapper -part xc7z007sclg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+INFO: [Device 21-9227] Part: xc7z007sclg400-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13712
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1543.234 ; gain = 447.496
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'final_block_wrapper' [C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/hdl/final_block_wrapper.vhd:50]
+INFO: [Synth 8-3491] module 'final_block' declared at 'c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:2014' bound to instance 'final_block_i' of component 'final_block' [C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/hdl/final_block_wrapper.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'final_block' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:2053]
+INFO: [Synth 8-3491] module 'final_block_Top_level_0_1' declared at 'c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_Top_level_0_1/synth/final_block_Top_level_0_1.vhd:56' bound to instance 'Top_level_0' of component 'final_block_Top_level_0_1' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:2477]
+INFO: [Synth 8-638] synthesizing module 'final_block_Top_level_0_1' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_Top_level_0_1/synth/final_block_Top_level_0_1.vhd:71]
+INFO: [Synth 8-3491] module 'Top_level' declared at 'C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.srcs/sources_1/new/Top_level.vhd:5' bound to instance 'U0' of component 'Top_level' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_Top_level_0_1/synth/final_block_Top_level_0_1.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'Top_level' [C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.srcs/sources_1/new/Top_level.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'Threshold_function' [C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.srcs/sources_1/new/Threshold_function.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Threshold_function' (0#1) [C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.srcs/sources_1/new/Threshold_function.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'Threshold_processing' [C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.srcs/sources_1/new/Threshold_processing.vhd:17]
+WARNING: [Synth 8-614] signal 'starting_value' is read in the process but is not in the sensitivity list [C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.srcs/sources_1/new/Threshold_processing.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'Threshold_processing' (0#1) [C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.srcs/sources_1/new/Threshold_processing.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Top_level' (0#1) [C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.srcs/sources_1/new/Top_level.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'final_block_Top_level_0_1' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_Top_level_0_1/synth/final_block_Top_level_0_1.vhd:71]
+INFO: [Synth 8-3491] module 'final_block_XADC_interpreter_2_0_0' declared at 'c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_XADC_interpreter_2_0_0/synth/final_block_XADC_interpreter_2_0_0.vhd:56' bound to instance 'XADC_interpreter_2_0' of component 'final_block_XADC_interpreter_2_0_0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:2490]
+INFO: [Synth 8-638] synthesizing module 'final_block_XADC_interpreter_2_0_0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_XADC_interpreter_2_0_0/synth/final_block_XADC_interpreter_2_0_0.vhd:70]
+INFO: [Synth 8-3491] module 'XADC_interpreter_2' declared at 'C:/Users/onwuxc/XADC_test/XADC_test.srcs/sources_1/new/XADC_interpreter_2.vhd:6' bound to instance 'U0' of component 'XADC_interpreter_2' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_XADC_interpreter_2_0_0/synth/final_block_XADC_interpreter_2_0_0.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'XADC_interpreter_2' [C:/Users/onwuxc/XADC_test/XADC_test.srcs/sources_1/new/XADC_interpreter_2.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'XADC_interpreter_2' (0#1) [C:/Users/onwuxc/XADC_test/XADC_test.srcs/sources_1/new/XADC_interpreter_2.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'final_block_XADC_interpreter_2_0_0' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_XADC_interpreter_2_0_0/synth/final_block_XADC_interpreter_2_0_0.vhd:70]
+INFO: [Synth 8-3491] module 'final_block_axi_gpio_0_0' declared at 'c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_axi_gpio_0_0/synth/final_block_axi_gpio_0_0.vhd:59' bound to instance 'axi_gpio_0' of component 'final_block_axi_gpio_0_0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:2502]
+INFO: [Synth 8-638] synthesizing module 'final_block_axi_gpio_0_0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_axi_gpio_0_0/synth/final_block_axi_gpio_0_0.vhd:84]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 16 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
+	Parameter C_IS_DUAL bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:1270' bound to instance 'U0' of component 'axi_gpio' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_axi_gpio_0_0/synth/final_block_axi_gpio_0_0.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:1356]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:181]
+INFO: [Synth 8-226] default block is never used [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:446]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:181]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:1356]
+INFO: [Synth 8-256] done synthesizing module 'final_block_axi_gpio_0_0' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_axi_gpio_0_0/synth/final_block_axi_gpio_0_0.vhd:84]
+INFO: [Synth 8-3491] module 'final_block_axi_gpio_1_0' declared at 'c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_axi_gpio_1_0/synth/final_block_axi_gpio_1_0.vhd:59' bound to instance 'axi_gpio_1' of component 'final_block_axi_gpio_1_0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:2525]
+INFO: [Synth 8-638] synthesizing module 'final_block_axi_gpio_1_0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_axi_gpio_1_0/synth/final_block_axi_gpio_1_0.vhd:84]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
+	Parameter C_IS_DUAL bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:1270' bound to instance 'U0' of component 'axi_gpio' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_axi_gpio_1_0/synth/final_block_axi_gpio_1_0.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio__parameterized1' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:1356]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core__parameterized0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:181]
+INFO: [Synth 8-226] default block is never used [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:446]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core__parameterized0' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:181]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio__parameterized1' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:1356]
+INFO: [Synth 8-256] done synthesizing module 'final_block_axi_gpio_1_0' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_axi_gpio_1_0/synth/final_block_axi_gpio_1_0.vhd:84]
+INFO: [Synth 8-3491] module 'final_block_clk_wiz_0_0' declared at 'c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_clk_wiz_0_0/final_block_clk_wiz_0_0.v:67' bound to instance 'clk_wiz_0' of component 'final_block_clk_wiz_0_0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:2548]
+INFO: [Synth 8-6157] synthesizing module 'final_block_clk_wiz_0_0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_clk_wiz_0_0/final_block_clk_wiz_0_0.v:67]
+INFO: [Synth 8-6157] synthesizing module 'final_block_clk_wiz_0_0_clk_wiz' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_clk_wiz_0_0/final_block_clk_wiz_0_0_clk_wiz.v:67]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx2/Vivado/2024.1/scripts/rt/data/unisim_comp.v:73643]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [C:/Xilinx2/Vivado/2024.1/scripts/rt/data/unisim_comp.v:73643]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx2/Vivado/2024.1/scripts/rt/data/unisim_comp.v:82388]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 16.125000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 8.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 24.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 12 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 25 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 2 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [C:/Xilinx2/Vivado/2024.1/scripts/rt/data/unisim_comp.v:82388]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx2/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx2/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'final_block_clk_wiz_0_0_clk_wiz' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_clk_wiz_0_0/final_block_clk_wiz_0_0_clk_wiz.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'final_block_clk_wiz_0_0' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_clk_wiz_0_0/final_block_clk_wiz_0_0.v:67]
+INFO: [Synth 8-3491] module 'final_block_processing_system7_0_0' declared at 'c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_processing_system7_0_0/synth/final_block_processing_system7_0_0.v:53' bound to instance 'processing_system7_0' of component 'final_block_processing_system7_0_0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:2555]
+INFO: [Synth 8-6157] synthesizing module 'final_block_processing_system7_0_0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_processing_system7_0_0/synth/final_block_processing_system7_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+INFO: [Synth 8-6157] synthesizing module 'BIBUF' [C:/Xilinx2/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1598]
+INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (0#1) [C:/Xilinx2/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1598]
+INFO: [Synth 8-6157] synthesizing module 'PS7' [C:/Xilinx2/Vivado/2024.1/scripts/rt/data/unisim_comp.v:115258]
+INFO: [Synth 8-6155] done synthesizing module 'PS7' (0#1) [C:/Xilinx2/Vivado/2024.1/scripts/rt/data/unisim_comp.v:115258]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_processing_system7_0_0/synth/final_block_processing_system7_0_0.v:439]
+WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_processing_system7_0_0/synth/final_block_processing_system7_0_0.v:439]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_processing_system7_0_0/synth/final_block_processing_system7_0_0.v:439]
+WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_processing_system7_0_0/synth/final_block_processing_system7_0_0.v:439]
+WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_processing_system7_0_0/synth/final_block_processing_system7_0_0.v:439]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_processing_system7_0_0/synth/final_block_processing_system7_0_0.v:439]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_processing_system7_0_0/synth/final_block_processing_system7_0_0.v:439]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_processing_system7_0_0/synth/final_block_processing_system7_0_0.v:439]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_processing_system7_0_0/synth/final_block_processing_system7_0_0.v:439]
+WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_processing_system7_0_0/synth/final_block_processing_system7_0_0.v:439]
+WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_processing_system7_0_0/synth/final_block_processing_system7_0_0.v:439]
+WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_processing_system7_0_0/synth/final_block_processing_system7_0_0.v:439]
+WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_processing_system7_0_0/synth/final_block_processing_system7_0_0.v:439]
+WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_processing_system7_0_0/synth/final_block_processing_system7_0_0.v:439]
+INFO: [Synth 8-6155] done synthesizing module 'final_block_processing_system7_0_0' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_processing_system7_0_0/synth/final_block_processing_system7_0_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'final_block_ps7_0_axi_periph_3' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:974]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1B0UXSY' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1B0UXSY' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_F5NPDO' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:159]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_F5NPDO' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:159]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_JA1KTU' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:283]
+INFO: [Synth 8-3491] module 'final_block_auto_pc_3' declared at 'c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_auto_pc_3/synth/final_block_auto_pc_3.v:53' bound to instance 'auto_pc' of component 'final_block_auto_pc_3' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:466]
+INFO: [Synth 8-6157] synthesizing module 'final_block_auto_pc_3' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_auto_pc_3/synth/final_block_auto_pc_3.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_axi_protocol_converter' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:5285]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4704]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_aw_channel' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4360]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_cmd_translator' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3720]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_incr_cmd' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3216]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_incr_cmd' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3216]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_wrap_cmd' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2982]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_wrap_cmd' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2982]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_cmd_translator' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3720]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_wr_cmd_fsm' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3392]
+INFO: [Synth 8-226] default block is never used [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3446]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_wr_cmd_fsm' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3392]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_aw_channel' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4360]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_b_channel' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3906]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_simple_fifo' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_simple_fifo' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_simple_fifo__parameterized0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_simple_fifo__parameterized0' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_b_channel' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3906]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_ar_channel' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4516]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_rd_cmd_fsm' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3546]
+INFO: [Synth 8-226] default block is never used [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3608]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_rd_cmd_fsm' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3546]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_ar_channel' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4516]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_r_channel' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4155]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_simple_fifo__parameterized1' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_simple_fifo__parameterized1' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_simple_fifo__parameterized2' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_simple_fifo__parameterized2' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_r_channel' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4155]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axi_register_slice' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:3718]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized0' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized1' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized1' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized2' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized2' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axi_register_slice' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:3718]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_31_axi_register_slice' is unconnected for instance 'SI_REG' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4871]
+WARNING: [Synth 8-7023] instance 'SI_REG' of module 'axi_register_slice_v2_1_31_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4871]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axi_register_slice__parameterized0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:3718]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized3' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized3' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized4' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized4' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized5' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized5' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized6' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized6' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axi_register_slice__parameterized0' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:3718]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_31_axi_register_slice' is unconnected for instance 'MI_REG' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:5126]
+WARNING: [Synth 8-7023] instance 'MI_REG' of module 'axi_register_slice_v2_1_31_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:5126]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4704]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_axi_protocol_converter' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:5285]
+INFO: [Synth 8-6155] done synthesizing module 'final_block_auto_pc_3' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_auto_pc_3/synth/final_block_auto_pc_3.v:53]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_JA1KTU' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:283]
+INFO: [Synth 8-3491] module 'final_block_s00_mmu_0' declared at 'c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_s00_mmu_0/synth/final_block_s00_mmu_0.v:53' bound to instance 's00_mmu' of component 'final_block_s00_mmu_0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:1704]
+INFO: [Synth 8-6157] synthesizing module 'final_block_s00_mmu_0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_s00_mmu_0/synth/final_block_s00_mmu_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_mmu_v2_1_29_top' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/b562/hdl/axi_mmu_v2_1_vl_rfs.v:553]
+INFO: [Synth 8-6157] synthesizing module 'axi_mmu_v2_1_29_addr_decoder' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/b562/hdl/axi_mmu_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'axi_mmu_v2_1_29_addr_decoder' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/b562/hdl/axi_mmu_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6157] synthesizing module 'axi_mmu_v2_1_29_decerr_slave' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/b562/hdl/axi_mmu_v2_1_vl_rfs.v:198]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/b562/hdl/axi_mmu_v2_1_vl_rfs.v:360]
+INFO: [Synth 8-6155] done synthesizing module 'axi_mmu_v2_1_29_decerr_slave' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/b562/hdl/axi_mmu_v2_1_vl_rfs.v:198]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axi_register_slice__parameterized1' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:3718]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized1' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized1' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized1' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized1' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized7' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized7' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized8' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized8' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized9' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized9' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized10' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized10' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axi_register_slice__parameterized1' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:3718]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_31_axi_register_slice' is unconnected for instance 'register_slice_inst' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/b562/hdl/axi_mmu_v2_1_vl_rfs.v:1169]
+WARNING: [Synth 8-7023] instance 'register_slice_inst' of module 'axi_register_slice_v2_1_31_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/b562/hdl/axi_mmu_v2_1_vl_rfs.v:1169]
+INFO: [Synth 8-6155] done synthesizing module 'axi_mmu_v2_1_29_top' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/b562/hdl/axi_mmu_v2_1_vl_rfs.v:553]
+INFO: [Synth 8-6155] done synthesizing module 'final_block_s00_mmu_0' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_s00_mmu_0/synth/final_block_s00_mmu_0.v:53]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_1ONTR8S' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:599]
+INFO: [Synth 8-3491] module 'final_block_auto_pc_4' declared at 'c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_auto_pc_4/synth/final_block_auto_pc_4.v:53' bound to instance 'auto_pc' of component 'final_block_auto_pc_4' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:782]
+INFO: [Synth 8-6157] synthesizing module 'final_block_auto_pc_4' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_auto_pc_4/synth/final_block_auto_pc_4.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'final_block_auto_pc_4' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_auto_pc_4/synth/final_block_auto_pc_4.v:53]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_1ONTR8S' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:599]
+INFO: [Synth 8-3491] module 'final_block_s01_mmu_0' declared at 'c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_s01_mmu_0/synth/final_block_s01_mmu_0.v:53' bound to instance 's01_mmu' of component 'final_block_s01_mmu_0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:1849]
+INFO: [Synth 8-6157] synthesizing module 'final_block_s01_mmu_0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_s01_mmu_0/synth/final_block_s01_mmu_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'final_block_s01_mmu_0' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_s01_mmu_0/synth/final_block_s01_mmu_0.v:53]
+INFO: [Synth 8-3491] module 'final_block_xbar_0' declared at 'c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_xbar_0/synth/final_block_xbar_0.v:53' bound to instance 'xbar' of component 'final_block_xbar_0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:1930]
+INFO: [Synth 8-6157] synthesizing module 'final_block_xbar_0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_xbar_0/synth/final_block_xbar_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_32_axi_crossbar' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:4871]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_32_crossbar_sasd' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:1234]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_32_addr_decoder' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_comparator_static' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_carry_and' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_carry_and' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_comparator_static' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_comparator_static__parameterized0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_comparator_static__parameterized0' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_comparator_static__parameterized1' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_comparator_static__parameterized1' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_32_addr_decoder' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized0' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_32_decerr_slave' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:3493]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_32_decerr_slave' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:3493]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_32_addr_arbiter_sasd' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:63]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized1' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized1' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_32_addr_arbiter_sasd' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:63]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_32_splitter' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_32_splitter' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_32_splitter__parameterized0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_32_splitter__parameterized0' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized2' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized2' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized3' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized3' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized11' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized11' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized4' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized4' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_32_crossbar_sasd' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:1234]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_32_axi_crossbar' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:4871]
+INFO: [Synth 8-6155] done synthesizing module 'final_block_xbar_0' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_xbar_0/synth/final_block_xbar_0.v:53]
+INFO: [Synth 8-256] done synthesizing module 'final_block_ps7_0_axi_periph_3' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:974]
+INFO: [Synth 8-3491] module 'final_block_rst_clk_wiz_0_40M_0' declared at 'c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_rst_clk_wiz_0_40M_0/synth/final_block_rst_clk_wiz_0_40M_0.vhd:59' bound to instance 'rst_clk_wiz_0_40M' of component 'final_block_rst_clk_wiz_0_40M_0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:2784]
+INFO: [Synth 8-638] synthesizing module 'final_block_rst_clk_wiz_0_40M_0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_rst_clk_wiz_0_40M_0/synth/final_block_rst_clk_wiz_0_40M_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1271' bound to instance 'U0' of component 'proc_sys_reset' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_rst_clk_wiz_0_40M_0/synth/final_block_rst_clk_wiz_0_40M_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
+	Parameter INIT bound to: 1'b1 
+	Parameter INIT bound to: 1'b1 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b1 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx2/Vivado/2024.1/scripts/rt/data/unisim_comp.v:137246' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:873]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/Xilinx2/Vivado/2024.1/scripts/rt/data/unisim_comp.v:137246]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [C:/Xilinx2/Vivado/2024.1/scripts/rt/data/unisim_comp.v:137246]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized1' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized1' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
+INFO: [Synth 8-256] done synthesizing module 'final_block_rst_clk_wiz_0_40M_0' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_rst_clk_wiz_0_40M_0/synth/final_block_rst_clk_wiz_0_40M_0.vhd:74]
+INFO: [Synth 8-3491] module 'final_block_xadc_wiz_0_0' declared at 'c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_xadc_wiz_0_0/final_block_xadc_wiz_0_0.vhd:55' bound to instance 'xadc_wiz_0' of component 'final_block_xadc_wiz_0_0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:2797]
+INFO: [Synth 8-638] synthesizing module 'final_block_xadc_wiz_0_0' [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_xadc_wiz_0_0/final_block_xadc_wiz_0_0.vhd:75]
+	Parameter INIT_40 bound to: 16'b0000000000000011 
+	Parameter INIT_41 bound to: 16'b0011000110101111 
+	Parameter INIT_42 bound to: 16'b0000001000000000 
+	Parameter INIT_48 bound to: 16'b0000000100000000 
+	Parameter INIT_49 bound to: 16'b0000000000000000 
+	Parameter INIT_4A bound to: 16'b0000000000000000 
+	Parameter INIT_4B bound to: 16'b0000000000000000 
+	Parameter INIT_4C bound to: 16'b0000000000000000 
+	Parameter INIT_4D bound to: 16'b0000000000000000 
+	Parameter INIT_4E bound to: 16'b0000000000000000 
+	Parameter INIT_4F bound to: 16'b0000000000000000 
+	Parameter INIT_50 bound to: 16'b1011010111101101 
+	Parameter INIT_51 bound to: 16'b0101011111100100 
+	Parameter INIT_52 bound to: 16'b1010000101000111 
+	Parameter INIT_53 bound to: 16'b1100101000110011 
+	Parameter INIT_54 bound to: 16'b1010100100111010 
+	Parameter INIT_55 bound to: 16'b0101001011000110 
+	Parameter INIT_56 bound to: 16'b1001010101010101 
+	Parameter INIT_57 bound to: 16'b1010111001001110 
+	Parameter INIT_58 bound to: 16'b0101100110011001 
+	Parameter INIT_59 bound to: 16'b0101010101010101 
+	Parameter INIT_5A bound to: 16'b1001100110011001 
+	Parameter INIT_5B bound to: 16'b0110101010101010 
+	Parameter INIT_5C bound to: 16'b0101000100010001 
+	Parameter INIT_5D bound to: 16'b0101000100010001 
+	Parameter INIT_5E bound to: 16'b1001000111101011 
+	Parameter INIT_5F bound to: 16'b0110011001100110 
+	Parameter SIM_DEVICE bound to: ZYNQ - type: string 
+	Parameter SIM_MONITOR_FILE bound to: design.txt - type: string 
+INFO: [Synth 8-256] done synthesizing module 'final_block_xadc_wiz_0_0' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_xadc_wiz_0_0/final_block_xadc_wiz_0_0.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'final_block' (0#1) [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/synth/final_block.vhd:2053]
+INFO: [Synth 8-256] done synthesizing module 'final_block_wrapper' (0#1) [C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/hdl/final_block_wrapper.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[2].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[3].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[4].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[5].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[6].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[7].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[8].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[9].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[10].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[11].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[12].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[13].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[14].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[15].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[2].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[3].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[4].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[5].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[6].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[7].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[8].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[9].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[10].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[11].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[12].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[13].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[14].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[15].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[16].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[17].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[18].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[19].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[20].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[21].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[22].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[23].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[24].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[25].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[26].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[27].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[28].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[29].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[30].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[31].GPIO_DBus_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element state_r1_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3596]
+WARNING: [Synth 8-6014] Unused sequential element s_arlen_r_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3597]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:2051]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:2062]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:2073]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:2086]
+WARNING: [Synth 8-7129] Port prmry_aclk in module cdc_sync__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_resetn in module cdc_sync__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[1] in module cdc_sync__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[0] in module cdc_sync__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scndry_resetn in module cdc_sync__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_32_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WLAST in module axi_crossbar_v2_1_32_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARID[0] in module axi_crossbar_v2_1_32_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[7] in module axi_crossbar_v2_1_32_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[6] in module axi_crossbar_v2_1_32_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[5] in module axi_crossbar_v2_1_32_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[4] in module axi_crossbar_v2_1_32_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[3] in module axi_crossbar_v2_1_32_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[2] in module axi_crossbar_v2_1_32_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[1] in module axi_crossbar_v2_1_32_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[0] in module axi_crossbar_v2_1_32_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[1] in module axi_crossbar_v2_1_32_addr_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[0] in module axi_crossbar_v2_1_32_addr_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[1] in module axi_crossbar_v2_1_32_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_32_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[1] in module axi_crossbar_v2_1_32_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[0] in module axi_crossbar_v2_1_32_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARID[1] in module axi_crossbar_v2_1_32_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARID[0] in module axi_crossbar_v2_1_32_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BID[1] in module axi_crossbar_v2_1_32_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BID[0] in module axi_crossbar_v2_1_32_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RID[1] in module axi_crossbar_v2_1_32_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RID[0] in module axi_crossbar_v2_1_32_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awid[1] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[15] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[14] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[13] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[12] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[11] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[10] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[9] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[8] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[7] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[6] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[5] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[4] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[3] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[2] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[1] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[0] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[5] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[4] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[3] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[2] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[1] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[0] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[3] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[2] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[1] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[0] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlock[1] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlock[0] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[7] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[6] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[5] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[4] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[3] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[2] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[1] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[0] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[7] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[6] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[5] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[4] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[3] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[2] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[1] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[0] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[1] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[1] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wlast[1] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wlast[0] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[1] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arid[1] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arid[0] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[15] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[14] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[13] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[12] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[11] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[10] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[9] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[8] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[7] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[6] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[5] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[4] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[3] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[2] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[1] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[0] in module axi_crossbar_v2_1_32_axi_crossbar is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1838.910 ; gain = 743.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1838.910 ; gain = 743.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1838.910 ; gain = 743.172
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.353 . Memory (MB): peak = 1838.910 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 303 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_processing_system7_0_0/final_block_processing_system7_0_0.xdc] for cell 'final_block_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_processing_system7_0_0/final_block_processing_system7_0_0.xdc] for cell 'final_block_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_processing_system7_0_0/final_block_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/final_block_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/final_block_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_xadc_wiz_0_0/final_block_xadc_wiz_0_0.xdc] for cell 'final_block_i/xadc_wiz_0/U0'
+Finished Parsing XDC File [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_xadc_wiz_0_0/final_block_xadc_wiz_0_0.xdc] for cell 'final_block_i/xadc_wiz_0/U0'
+Parsing XDC File [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_clk_wiz_0_0/final_block_clk_wiz_0_0_board.xdc] for cell 'final_block_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_clk_wiz_0_0/final_block_clk_wiz_0_0_board.xdc] for cell 'final_block_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_clk_wiz_0_0/final_block_clk_wiz_0_0.xdc] for cell 'final_block_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_clk_wiz_0_0/final_block_clk_wiz_0_0.xdc] for cell 'final_block_i/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_clk_wiz_0_0/final_block_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/final_block_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/final_block_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_axi_gpio_0_0/final_block_axi_gpio_0_0_board.xdc] for cell 'final_block_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_axi_gpio_0_0/final_block_axi_gpio_0_0_board.xdc] for cell 'final_block_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_axi_gpio_0_0/final_block_axi_gpio_0_0.xdc] for cell 'final_block_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_axi_gpio_0_0/final_block_axi_gpio_0_0.xdc] for cell 'final_block_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_rst_clk_wiz_0_40M_0/final_block_rst_clk_wiz_0_40M_0_board.xdc] for cell 'final_block_i/rst_clk_wiz_0_40M/U0'
+Finished Parsing XDC File [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_rst_clk_wiz_0_40M_0/final_block_rst_clk_wiz_0_40M_0_board.xdc] for cell 'final_block_i/rst_clk_wiz_0_40M/U0'
+Parsing XDC File [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_rst_clk_wiz_0_40M_0/final_block_rst_clk_wiz_0_40M_0.xdc] for cell 'final_block_i/rst_clk_wiz_0_40M/U0'
+Finished Parsing XDC File [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_rst_clk_wiz_0_40M_0/final_block_rst_clk_wiz_0_40M_0.xdc] for cell 'final_block_i/rst_clk_wiz_0_40M/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_rst_clk_wiz_0_40M_0/final_block_rst_clk_wiz_0_40M_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/final_block_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/final_block_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_axi_gpio_1_0/final_block_axi_gpio_1_0_board.xdc] for cell 'final_block_i/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_axi_gpio_1_0/final_block_axi_gpio_1_0_board.xdc] for cell 'final_block_i/axi_gpio_1/U0'
+Parsing XDC File [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_axi_gpio_1_0/final_block_axi_gpio_1_0.xdc] for cell 'final_block_i/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ip/final_block_axi_gpio_1_0/final_block_axi_gpio_1_0.xdc] for cell 'final_block_i/axi_gpio_1/U0'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.srcs/constrs_1/new/final_constraints.xdc]
+Finished Parsing XDC File [C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.srcs/constrs_1/new/final_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.srcs/constrs_1/new/final_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/final_block_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/final_block_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/final_block_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/final_block_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1924.961 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 301 instances were transformed.
+  FDR => FDRE: 300 instances
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1924.961 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 1924.961 ; gain = 829.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 1924.961 ; gain = 829.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for final_block_i/processing_system7_0/inst. (constraint file  C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.runs/synth_1/dont_touch.xdc, line 52).
+Applied set_property KEEP_HIERARCHY = SOFT for final_block_i/clk_wiz_0/inst. (constraint file  C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.runs/synth_1/dont_touch.xdc, line 60).
+Applied set_property KEEP_HIERARCHY = SOFT for final_block_i/axi_gpio_0/U0. (constraint file  C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.runs/synth_1/dont_touch.xdc, line 68).
+Applied set_property KEEP_HIERARCHY = SOFT for final_block_i/rst_clk_wiz_0_40M/U0. (constraint file  C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.runs/synth_1/dont_touch.xdc, line 80).
+Applied set_property KEEP_HIERARCHY = SOFT for final_block_i/axi_gpio_1/U0. (constraint file  C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.runs/synth_1/dont_touch.xdc, line 86).
+Applied set_property KEEP_HIERARCHY = SOFT for final_block_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for final_block_i/processing_system7_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for final_block_i/xadc_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for final_block_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for final_block_i/XADC_interpreter_2_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for final_block_i/Top_level_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for final_block_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for final_block_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for final_block_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for final_block_i/ps7_0_axi_periph/s01_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for final_block_i/ps7_0_axi_periph/s00_mmu. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for final_block_i/ps7_0_axi_periph/s01_mmu. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for final_block_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for final_block_i/rst_clk_wiz_0_40M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for final_block_i/axi_gpio_1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 1924.961 ; gain = 829.223
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'XADC_interpreter_2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_31_b2s_wr_cmd_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_31_b2s_rd_cmd_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.gen_write.write_cs_reg' in module 'axi_mmu_v2_1_29_decerr_slave'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_write.w_state_reg' in module 'axi_mmu_v2_1_29_top'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_read.r_state_reg' in module 'axi_mmu_v2_1_29_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               00
+                 iSTATE0 |                              010 |                               01
+                 iSTATE1 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'XADC_interpreter_2'
+WARNING: [Synth 8-327] inferring latch for variable 'di_in_reg' [C:/Users/onwuxc/XADC_test/XADC_test.srcs/sources_1/new/XADC_interpreter_2.vhd:30]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                               01 |                               00
+               SM_CMD_EN |                               11 |                               01
+         SM_CMD_ACCEPTED |                               10 |                               10
+            SM_DONE_WAIT |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_31_b2s_wr_cmd_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                               01 |                               00
+               SM_CMD_EN |                               11 |                               01
+         SM_CMD_ACCEPTED |                               10 |                               10
+                 SM_DONE |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_31_b2s_rd_cmd_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            P_WRITE_IDLE |                              001 |                               00
+            P_WRITE_DATA |                              010 |                               01
+            P_WRITE_RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.gen_write.write_cs_reg' using encoding 'one-hot' in module 'axi_mmu_v2_1_29_decerr_slave'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              000
+*
+               W_PENDING |                              010 |                              001
+                W_DECERR |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_write.w_state_reg' using encoding 'one-hot' in module 'axi_mmu_v2_1_29_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                              000
+*
+               R_PENDING |                               01 |                              001
+                R_DECERR |                               10 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_read.r_state_reg' using encoding 'sequential' in module 'axi_mmu_v2_1_29_top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 1924.961 ; gain = 829.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   12 Bit       Adders := 21    
+	   2 Input    9 Bit       Adders := 12    
+	   2 Input    8 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 7     
+	   2 Input    5 Bit       Adders := 8     
+	   2 Input    4 Bit       Adders := 10    
+	   2 Input    2 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 68    
++---Registers : 
+	               67 Bit    Registers := 4     
+	               66 Bit    Registers := 8     
+	               64 Bit    Registers := 1     
+	               47 Bit    Registers := 4     
+	               36 Bit    Registers := 2     
+	               32 Bit    Registers := 8     
+	               16 Bit    Registers := 10    
+	               14 Bit    Registers := 4     
+	               12 Bit    Registers := 27    
+	                9 Bit    Registers := 14    
+	                8 Bit    Registers := 14    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 7     
+	                5 Bit    Registers := 8     
+	                4 Bit    Registers := 14    
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 34    
+	                1 Bit    Registers := 172   
++---ROMs : 
+	                    ROMs := 4     
++---Muxes : 
+	   2 Input   66 Bit        Muxes := 8     
+	   2 Input   64 Bit        Muxes := 2     
+	   2 Input   47 Bit        Muxes := 4     
+	   2 Input   36 Bit        Muxes := 2     
+	   5 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 21    
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input   14 Bit        Muxes := 4     
+	   2 Input   12 Bit        Muxes := 26    
+	   2 Input    9 Bit        Muxes := 18    
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 8     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 46    
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 54    
+	   3 Input    2 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 10    
+	   3 Input    1 Bit        Muxes := 27    
+	   2 Input    1 Bit        Muxes := 173   
+	   4 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1726]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1726]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1726]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1726]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/Users/onwuxc/Desktop/Work/Final_project/Final_project.gen/sources_1/bd/final_block/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1726]
+INFO: [Synth 8-3332] Sequential element (U0/di_in_reg[15]) is unused and will be removed from module final_block_XADC_interpreter_2_0_0.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[10].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[11].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[12].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[13].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[14].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[15].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[10].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[11].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[12].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[13].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[14].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[15].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[10].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[11].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[12].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[13].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[14].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[15].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[16].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[17].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[18].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[19].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[20].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[21].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[22].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[23].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[24].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[25].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[26].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[27].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[28].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[29].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[30].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[31].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[10].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[11].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[12].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[13].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[14].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[15].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[16].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[17].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[18].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[19].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[20].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[21].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[22].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[23].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[24].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[25].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[26].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[27].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[28].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[29].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[30].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[31].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_gen_write.w_state_reg[0]) is unused and will be removed from module final_block_s00_mmu_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_gen_write.w_state_reg[0]) is unused and will be removed from module final_block_s01_mmu_0.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 1924.961 ; gain = 829.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++--------------------------+----------------------------------+---------------+----------------+
+|Module Name               | RTL Object                       | Depth x Width | Implemented As | 
++--------------------------+----------------------------------+---------------+----------------+
+|Top_level                 | cycle_1/current_sin_value_reg    | 512x8         | Block RAM      | 
+|Top_level                 | cycle_2/current_sin_value_reg    | 512x8         | Block RAM      | 
+|Top_level                 | cycle_3/current_sin_value_reg    | 512x8         | Block RAM      | 
+|Top_level                 | cycle_4/current_sin_value_reg    | 512x8         | Block RAM      | 
+|final_block_Top_level_0_1 | U0/cycle_1/current_sin_value_reg | 512x8         | Block RAM      | 
+|final_block_Top_level_0_1 | U0/cycle_2/current_sin_value_reg | 512x8         | Block RAM      | 
+|final_block_Top_level_0_1 | U0/cycle_3/current_sin_value_reg | 512x8         | Block RAM      | 
+|final_block_Top_level_0_1 | U0/cycle_4/current_sin_value_reg | 512x8         | Block RAM      | 
++--------------------------+----------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:01:00 . Memory (MB): peak = 1924.961 ; gain = 829.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:07 . Memory (MB): peak = 1924.961 ; gain = 829.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:09 . Memory (MB): peak = 1924.961 ; gain = 829.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 1924.961 ; gain = 829.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 1924.961 ; gain = 829.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:15 . Memory (MB): peak = 1924.961 ; gain = 829.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:15 . Memory (MB): peak = 1924.961 ; gain = 829.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:15 . Memory (MB): peak = 1924.961 ; gain = 829.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:15 . Memory (MB): peak = 1924.961 ; gain = 829.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | memory_reg[3]  | 20     | 20         | 20     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | memory_reg[3]  | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__2     | memory_reg[31] | 34     | 34         | 0      | 34      | 0      | 0      | 0      | 
+|dsrl__3     | memory_reg[31] | 13     | 13         | 0      | 13      | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BIBUF      |   130|
+|2     |BUFG       |     4|
+|3     |CARRY4     |    85|
+|4     |LUT1       |    58|
+|5     |LUT2       |   310|
+|6     |LUT3       |   633|
+|7     |LUT4       |   331|
+|8     |LUT5       |   282|
+|9     |LUT6       |   655|
+|10    |MMCME2_ADV |     1|
+|11    |MUXF7      |    92|
+|12    |PS7        |     1|
+|13    |SRL16      |     1|
+|14    |SRL16E     |    36|
+|15    |SRLC32E    |    94|
+|16    |XADC       |     1|
+|17    |FDCE       |   179|
+|18    |FDPE       |     7|
+|19    |FDR        |   196|
+|20    |FDRE       |  1851|
+|21    |FDSE       |    92|
+|22    |IBUF       |     2|
+|23    |OBUF       |     5|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:15 . Memory (MB): peak = 1924.961 ; gain = 829.223
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 239 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:01:09 . Memory (MB): peak = 1924.961 ; gain = 743.172
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:15 . Memory (MB): peak = 1924.961 ; gain = 829.223
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.190 . Memory (MB): peak = 1924.961 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 376 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1924.961 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 197 instances were transformed.
+  FDR => FDRE: 196 instances
+  SRL16 => SRL16E: 1 instance 
+
+Synth Design complete | Checksum: 78794cc2
+INFO: [Common 17-83] Releasing license: Synthesis
+496 Infos, 178 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:32 . Memory (MB): peak = 1924.961 ; gain = 1233.141
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1924.961 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/onwuxc/Desktop/Work/Final_project/Final_project.runs/synth_1/final_block_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file final_block_wrapper_utilization_synth.rpt -pb final_block_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 29 11:40:25 2024...

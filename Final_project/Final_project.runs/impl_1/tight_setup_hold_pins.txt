@@ -1,0 +1,36 @@
++===================================+===================================+==========================================================+
+| Launch Setup Clock                | Launch Hold Clock                 | Pin                                                      |
++===================================+===================================+==========================================================+
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_2_reg[2]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_1_reg[4]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_3_reg[3]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_3_reg[0]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_1_reg[0]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_3_reg[7]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_3_reg[1]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_3_reg[4]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_4_reg[3]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_4_reg[5]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_4_reg[1]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_1_reg[5]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_3_reg[2]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_1_reg[2]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_3_reg[6]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_3_reg[5]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_2_reg[3]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_2_reg[6]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_4_reg[0]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_2_reg[4]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_4_reg[4]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_2_reg[0]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_2_reg[5]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_1_reg[6]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_4_reg[6]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_1_reg[7]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_1_reg[3]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_2_reg[1]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_2_reg[7]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_4_reg[7]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_4_reg[2]/D |
+| clk_42MHz_final_block_clk_wiz_0_0 | clk_42MHz_final_block_clk_wiz_0_0 | final_block_i/Top_level_0/U0/threshold_output_1_reg[1]/D |
++-----------------------------------+-----------------------------------+----------------------------------------------------------+
